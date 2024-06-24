@@ -47,7 +47,7 @@ public class SubirArchivoController {
                         .path("/api/v1/archivos/descargar/")
                         .path(nombreArchivo)
                         .toUriString();
-
+//
                 urlsDescarga.add(urlDescarga);
             } catch (IOException e) {
                 return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
